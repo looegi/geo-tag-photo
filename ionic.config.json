@@ -1,0 +1,8 @@
+{
+  "name": "GeoTagPhoto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "47372c10"
+}
