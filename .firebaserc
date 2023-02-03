@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "phototag-2375e": {
+      "hosting": {
+        "app": [
+          "phototag-2375e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "phototag-2375e"
+  }
+}
