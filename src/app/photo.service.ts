@@ -1,15 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 import { Geolocation } from '@capacitor/geolocation';
+/*
 import { AngularFirestore } from '@angular/fire/compat/firestore'
+
 import { AngularFireStorage } from '@angular/fire/compat/storage'
+*/
 import { Photo } from './photo';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PhotoService {
-
+  takePhoto() {console.log('takePhoto')}
+/*
   constructor(private firestore: AngularFirestore, private storage: AngularFireStorage) { }
   private async getLocation() {
     const location = await Geolocation.getCurrentPosition();
@@ -33,4 +37,5 @@ export class PhotoService {
       lng: longitude
     })
   }
+*/
 }
