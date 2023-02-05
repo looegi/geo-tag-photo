@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -9,5 +11,6 @@ export class AppComponent {
     { title: 'Taka a photo', url: '/capture', icon: 'camera' },
     { title: 'View Gallery', url: '/view', icon: 'globe' },
   ];
-  constructor() {}
+
+  
 }

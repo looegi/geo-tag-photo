@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PhotoService } from '../photo.service';
-import { throws } from 'assert';
+
 
 @Component({
   selector: 'app-capture',
