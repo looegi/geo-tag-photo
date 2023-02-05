@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "customWebpackConfig" : {
-            "path": ".extra-webpack-config.js"
+            "path": ".extra-webpack.config.js"
           },
           "options": {
             "outputPath": "www",
@@ -32,6 +32,11 @@
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/cesium/Build/Cesium",
+                "output": "assets/cesium"
               }
             ],
             "styles": [
@@ -116,7 +121,13 @@
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
                 "output": "./svg"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/cesium/Build/Cesium",
+                "output": "assets/cesium"
               }
+
             ],
             "styles": [
               "src/theme/variables.scss",

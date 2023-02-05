@@ -1,5 +1,6 @@
-import { AfterViewInit, Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { Viewer } from 'cesium'
+import { CesiumService } from '../cesium.service';
 
 @Component({
   selector: 'app-view',
@@ -8,9 +9,11 @@ import { Viewer } from 'cesium'
 })
 export class ViewPage implements  AfterViewInit {
   @ViewChild('mapContainer') content: ElementRef;
-
+  constructor(private cesiumService: CesiumService) {}
+  
   ngAfterViewInit(): void {
-      const viewer = new Viewer(this.content.nativeElement);
+      this.cesiumService.register(new Viewer(this.content.nativeElement))
+      this.cesiumService.addPhotos();
   }
 
 }
